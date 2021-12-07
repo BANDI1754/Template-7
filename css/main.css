@@ -34,11 +34,11 @@ ul {
     }
 }
 /* min */
-@media(max-width : 700px) {
+/* @media(min-width : 700px) {
     .container {
         width: 670px;
     }
-}
+} */
 :root {
     --font-family: 'Work Sans', sans-serif;
     --main-text-color: #464e90;
@@ -122,7 +122,7 @@ header .container nav > .lang > a button {
 }
 header .container nav > .lang > a button::after {
     font-family: "Font Awesome 5 Free";
-    content: "\f0da";
+    content: "\f054";
     font-weight: 900;
     font-size: 15px;
     position: absolute;
@@ -140,8 +140,9 @@ header .container nav > i:hover + ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background-color: #012496;
-    opacity: 30%;
+    background-color: var(--footer-background);
+    opacity: 85%;
+    width: 100%;
 }
 @media(min-width: 768px) {
     header .container nav > i {
@@ -225,7 +226,7 @@ header .container nav > i:hover + ul {
 }
 @media(max-width: 768px) {
     .landing .container > img {
-        max-width: 65%;
+        max-width: 70%;
     }
     .landing .container .box1 h1 {
         font-size: 25px;
@@ -233,10 +234,6 @@ header .container nav > i:hover + ul {
     .landing .container .box1 p {
         font-size: 14px;
         max-width: 400px;
-    }
-    .landing .container img {
-        width: 400px;
-        height: 400px;
     }
 }
 /* end landing */
@@ -263,6 +260,12 @@ header .container nav > i:hover + ul {
     font-size: 35px;
     line-height: 1.6;
     margin-bottom: 40px;
+}
+@media(max-width: 768px) {
+    .section .container .box1 h2 {
+        font-size: 25px;
+        /* text-align: center; */
+    }
 }
 .section .container .box1 a {
     text-decoration: none;
@@ -296,6 +299,7 @@ header .container nav > i:hover + ul {
     line-height: 1.6;
 }
 /* end services  */
+
 /* start about */
 .about {
     position: relative;
@@ -456,7 +460,7 @@ header .container nav > i:hover + ul {
 }
 .portfolio .container .grid .top h3 {
     color: var(--main-text-color);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     flex-basis: 35%;
     line-height: 1.6;
@@ -791,8 +795,8 @@ header .container nav > i:hover + ul {
     font-size: 40px;
 }
 
-/* @media(max-width: 768px) {
-    .dx  {
+@media(max-width: 768px) {
+    .fot  {
         position: relative;
         padding-top: var(--main-padding);
         padding-bottom: var(--main-padding);
@@ -801,14 +805,25 @@ header .container nav > i:hover + ul {
         flex-direction: column;
         align-items: center;
     }
-    .dx  ul {
+    .fot  ul {
         width: 100%;
     }
-    .dx  ul li a {
+    .fot  ul li a {
         color: white;
         text-decoration: none;
-        font-weight: 600;
-        font-size: 12px;
+        font-weight: 200;
+        font-size: 10px;
+        margin: 5px;
     }
-} */
+    .fot .container h2 {
+        color: var(--second-text-color);
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    .fot .container  .logos i {
+        color: white;
+        font-size: 20px;
+    }
+}
 /* end footer  */
